@@ -2,6 +2,7 @@
 # and a workspace (GOPATH) configured at /go.
 FROM golang
 
+ENVREFRESH_DATE 2018-08-02_001
 # create the user
 RUN useradd -r -s /bin/false helloworld
 # Go get and build
