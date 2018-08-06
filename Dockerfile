@@ -5,7 +5,6 @@ FROM golang
 # create the user
 RUN useradd -r -s /bin/false helloworld
 # Go get and build
-ADD . /app
 RUN go get github.com/huangguoqiang/go-hello-world
 RUN go install github.com/huangguoqiang/go-hello-world
 
